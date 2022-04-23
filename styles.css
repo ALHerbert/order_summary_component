@@ -1,0 +1,225 @@
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-pale-blue: hsl(225, 100%, 94%);
+    --clr-bright-blue: hsl(245, 75%, 52%);
+    --clr-bright-blue-hover: hsl(245, 83%, 68%);
+    --clr-very-pale-blue: hsl(225, 100%, 98%);
+    --clr-desaturated-blue: hsl(224, 23%, 55%);
+    --clr-dark-blue: hsl(223, 47%, 23%);
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-color: var(--clr-pale-blue);
+    background-repeat: repeat-x;
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 450px;
+    height: 697px;
+    background-color: var(--clr-white); 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding: 0px 48px;
+}
+
+#illustration-hero {
+    width: 450px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    margin-bottom: 50px;
+}
+
+.title {
+    font-weight: var(--fw-black);
+    font-size: 28px;
+    line-height: 37px;
+    color: var(--clr-dark-blue);
+    margin-bottom: 17px;
+}
+
+.text {
+    font-weight: var(--fw-medium);
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--clr-desaturated-blue);
+    margin-bottom: 20px;
+}
+
+#plan-select {
+    width: 354px;
+    height: 98px;
+    border-radius: 11px;
+    background-color: var(--clr-very-pale-blue);
+    display: flex;
+    align-items: center;
+    padding: 25px 24px;
+    margin-bottom: 32px;
+}
+
+#icon-music {
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+}
+
+#plan-name-pricing {
+    margin-right: 94px;
+}
+
+#plan-name {
+    font-weight: var(--fw-black);
+    line-height: 21px;
+    color: var(--clr-dark-blue);
+    margin-bottom: 6px;
+}
+
+#plan-pricing {
+    font-weight: var(--fw-medium);
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--clr-desaturated-blue);
+}
+
+#plan-change {
+    font-weight: var(--fw-bold);
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: var(--clr-bright-blue);
+}
+
+#plan-change:hover {
+    text-decoration: none;
+    color: var(--clr-bright-blue-hover);
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+    width: 354px;
+    height: 50px;
+    background: var(--clr-bright-blue);
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    border-radius: 11px;
+    font-weight: var(--fw-black);
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--clr-white);
+    margin-bottom: 32px;
+}
+
+.btn:hover {
+    background-color: var(--clr-bright-blue-hover);
+    cursor: pointer;
+}
+
+.cancel {
+    font-weight: var(--fw-black);
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--clr-desaturated-blue);
+}
+
+.cancel:hover {
+    color: var(--clr-dark-blue);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+
+    .card {
+        width: 327px;
+        height: 567px;
+        padding: 0px 24px;
+    }
+
+    #illustration-hero {
+        width: 327px;
+        margin-bottom: 32px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 16px;
+    }
+
+    .text {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 24px;
+    }
+
+    #plan-select {
+        width: 279px;
+        height: 81px;
+        border-radius: 11px;
+        padding: 17px 16px;
+        margin-bottom: 24px;
+    }
+
+    #icon-music {
+        width: 48px;
+        height: 48px;
+        margin-right: 20px;
+    }
+
+    #plan-name-pricing {
+        margin-right: 50px;
+    }
+
+    #plan-name {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 3px;
+    }
+
+    #plan-pricing {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    #plan-change {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .btn {
+        width: 279px;
+        height: 50px;
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 24px;
+    }
+
+    .cancel {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
